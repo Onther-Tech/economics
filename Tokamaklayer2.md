@@ -226,3 +226,49 @@ While doing numeric modeling, we will refer to Boba Network for two reasons.
 First, Boba Network is an appropriate example of a relatively small protocol in a heterogeneous system. According to L2Beat, its current market share is approximately 0.59% as of October 5th, KST.
 
 Second, Boba Network is a good proxy for Tokamak Network. Both services utilize the optimistic roll-up technology. The size of networks, in terms of TVL, is quite similar, too.
+<br/>
+<br/>
+
+- **Layer 1 fees (roll-up fees)**
+  <br/>
+  <br/>
+  
+  The transaction and state batches are submitted to Ethereum every hour in Boba Network. For the sake of simplicity, if we fix the number of transactions included in a batch as 34, the average during the recent 24 hours, the daily roll-up fees can be estimated as follows:
+(As of October 5th, KST)
+<br/>
+
+<aside>
+    💡 transaction & state batch examples
+    
+    [https://etherscan.io/tx/0xd8554666451837c2102b69d04b7da658fb063214c8ec826e057dffa441fb7653]                                (https://etherscan.io/tx/0xd8554666451837c2102b69d04b7da658fb063214c8ec826e057dffa441fb7653)
+
+    [https://etherscan.io/tx/0x098bada6a80f025218fae21dcdd61bbed3854d18cc1c45c3f9cabb7875b9f48f](https://etherscan.io/tx/0x098bada6a80f025218fae21dcdd61bbed3854d18cc1c45c3f9cabb7875b9f48f)
+<br/>
+    
+    [https://etherscan.io/tx/0x169f651767989fbca0e9268b378e7602a0c1cffc19fb8f3ed4779921c01c6ec3](https://etherscan.io/tx/0x169f651767989fbca0e9268b378e7602a0c1cffc19fb8f3ed4779921c01c6ec3)
+
+    [https://etherscan.io/tx/0xbea9754d2c190912570c5fd03647c5262955208382405f779bd07dbc6d191184](https://etherscan.io/tx/0xbea9754d2c190912570c5fd03647c5262955208382405f779bd07dbc6d191184)
+<br/>
+    
+    [https://etherscan.io/tx/0x3d3299a63dc144cbf041fba2af5e520fa0f0730b3cd0fa7dac80bfaa0474454f](https://etherscan.io/tx/0x3d3299a63dc144cbf041fba2af5e520fa0f0730b3cd0fa7dac80bfaa0474454f)
+
+    [https://etherscan.io/tx/0x01e27250952e8c86ab6dba787f97ebaf313a82e6058fac8ef67e92d5adb464d1](https://etherscan.io/tx/0x01e27250952e8c86ab6dba787f97ebaf313a82e6058fac8ef67e92d5adb464d1)
+
+</aside>
+
+ 1. average amount of gas required per transaction & state batch: 358,248
+ 2. gas price: 10~30 gwei (reflecting the recent downward trend in gas prices)
+ 3. **daily roll-up fees:** 358,248*(10~30 gwei)*24 = 86 ~258 million gwei = 0.086 ~ 0.258 ETH
+<br/>
+
+- **Estimated MEV a sequencer earns**
+    <br/>
+    <br/>
+    
+    According to Flashbots, as of October 5th, KST, the extracted MEV during the last 30 days is about 795K USD. Therefore, we can infer that MEV worth approximately 27K USD gets materialized daily.
+    
+    However, it is more like the lower bound for the actual MEV due to the omission of certain types of transactions, including CEX-DEX arbitrages and sandwich transactions. Moreover, it is the extracted MEV on Ethereum, not layer 2 networks.
+    
+    Therefore, adapting the original data for our modeling is crucial.
+    </br>
+    </br>
