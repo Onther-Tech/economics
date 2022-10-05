@@ -474,3 +474,49 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   As you can see, sequencers are likely to invest their money in the early stage of protocols. Therefore, the incentive mechanism is necessary to ensure that sequencers get credit for their performances. Here comes the TON seigniorage distribution proportional to the amount of TON deposited. As sequencers convince users of their merits, more TON will be deposited to make transactions, leading to more TON seigniorage for sequencers.
 
   The TON seigniorage distribution proportional to the amount of TON locked can also work in that way. If sequencers lock a large amount of TON for seigniorage, they have big stakes to lose for their malicious behaviors. Users will interpret it as a sincere commitment to layer 2 security.
+  <br/>
+  <br/>
+  
+- **MEV**
+    
+  Now that TON incentives laid the ground for MEV by bringing more people into platforms, we should delve into concrete ways to extract MEV.
+  <br/>
+  <br/>
+  
+  ![paidservice](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209.07.41.png)
+  <br/>
+  <br/>
+  
+  For instance, we can implement the ‘paid service’ in processing transactions. In this case, the default transaction fees are zero. However, ‘paid users’ choose to pay fees and earn some benefits. Such benefits can be either prioritizing their transactions or sharing the MEV of a sequencer in the future. If possible, even paid users may be divided into multiple tiers.
+    <br/>
+    <br/>
+
+  Establishing exchanges is also on the table. Potential arbitrage opportunities will add to MEV. Additionally, sequencers can also expect commissions from trading activities.
+<br/>
+
+#### 3.3.2. Mature protocols
+<br/>
+
+- **TON seigniorage distribution**
+  <br/>
+  
+  ![noswap](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.03.50%20(1).png)
+  <br/>
+  <br/>
+  
+  TON seigniorage performs a similar role in mature protocols: encourage sequencers to maintain loyal users and capture new users.
+  <br/>
+  <br/>
+  However, we must not miss one additional function: discourage sequencers from swapping TON for ETH. There is no way to force sequencers to use MEV to cover security fees. Despite making an adequate amount of MEV, they can still swap TON from transaction fees for ETH to pay layer 1 fees. TON seigniorage distribution based on the amount of TON locked raises the opportunity costs of such actions. If sequencers decide to sell TON from transaction fees, they give up potential benefits from TON seigniorage.
+<br/>
+
+- **MEV**
+  <br/>
+  
+  Ideally, once they get mature, layer 2 services extract MEV enough to cover layer 1 fees. However, that might not be the case due to several factors, including the different layer 2 future landscape from our expectations.
+  <br/>
+  <br/>
+  
+  We can come up with alternatives to counter the shortfall. For example, sequencers may borrow money from users. Some collaterals can be attached to the loan to ensure redemption.
+
+  Developing useful applications also helps sequencers alleviate the financial issue. P2P Lending/borrowing is the most common example. A lottery whose pool consists of users’ money is also possible. Commissions from these applications can contribute to making up for the insufficient MEV.
