@@ -215,7 +215,6 @@ However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers star
 
 #### 3.1.4. Numeric MEV modeling
 <br/>
-<br/>
 
 We have reasoned that MEV will remain in place, and each layer 2 protocol will have a part of MEV. It is finally time to check whether the actual data supports our argument. 
 <br/>
@@ -366,7 +365,6 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
 <br/>
 
 #### 3.2.1. Terminologies
-<br/>
 <br/>
 
 - **TON seigniorage**
@@ -520,3 +518,45 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   We can come up with alternatives to counter the shortfall. For example, sequencers may borrow money from users. Some collaterals can be attached to the loan to ensure redemption.
 
   Developing useful applications also helps sequencers alleviate the financial issue. P2P Lending/borrowing is the most common example. A lottery whose pool consists of users’ money is also possible. Commissions from these applications can contribute to making up for the insufficient MEV.
+<br/>
+<br/>
+
+In conclusion, implications of our model are as follows:
+<br/>
+<br/>
+
+![structure](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.13.27.png)
+<br/>
+<br/>
+
+We can summarize the whole discussion with the diagram above.
+<br/>
+<br/>
+
+In conclusion, implications of our model are as follows:
+<br/>
+<br/>
+
+- **Improved UX**
+  <br/>    
+    
+    Users can reduce their dependence on ETH to pay transaction fees because TON is also a fee token.
+  <br/>
+  <br/>
+  
+- **Centralized but censorship-resistant block production**
+  <br/>
+  
+  ![censorresistant](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-08%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.37.38.png)
+  <br/>
+  <br/>
+  
+  One of the most serious shortcomings of centralized block production is that transactions can be censored arbitrarily. However, in the future anticipated by Tokamak Network, such malicious behaviors can be restricted due to the competition among layer 2 protocols. The competition arises out of the homogeneity they share. If a specific layer 2 platform tries to manipulate the block creation at the expense of users’ benefits, they will abandon the network and migrate to other competitors.
+  <br/>
+  <br/>
+  
+- **Curtailed negative externalities of MEV**
+
+  MEV has long been criticized for degrading UX. For this reason, leading layer 2 protocols have struggled to resolve the problem. For instance, Optimism aims at diverting MEV to common goods within the network through the MEV auction. On the other hand, Arbitrum tries to minimize MEV itself with decentralized sequencers. It has reportedly been exploring the Fair Sequencing Service by Chainlink.
+
+  Our approach is more like the one taken by Optimism. While admitting the presence of MEV, Tokamak Network plans to alleviate the negative externalities of MEV by making it contribute to the fee token utility of TON.
