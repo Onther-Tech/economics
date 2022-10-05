@@ -88,6 +88,7 @@ In other words, Boba network utilizes incentives so that more BOBA remains withi
 
 Tokamak Network wants TON to be a fee token. Plus, we directly deal with the fee token dilemma by using two tools at our disposal: MEV or Maximal Extractable Value and TON seigniorage distribution.
 <br/>
+<br/>
 
 ### 3.1. MEV(Maximal Extractable Value)
 <br/>
@@ -158,3 +159,70 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   Then, how does block production get centralized? It is closely related to the future layer 2 landscape proposed by Vitalik Buterin. The figure above illustrates the two possibilities discussed in his famous article ‘Endgame’: 1) a homogenous system where a small number of similar chains handle most of the Ethereum activities or 2) a heterogeneous system where multiple different chains cater to diverse needs. 
 
   Interestingly, both scenarios can lead to the same conclusion: centralized block production. In the case of a homogeneous world, the larger computational capacity for higher TPS would render the block production centralized. As for a heterogeneous ecosystem, potential cross-domain MEV may make centralized block production more likely.
+  <br/>
+  <br/>
+  
+  ![defi TVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-28%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.37.55.png)
+  <br/>
+  <br/>
+  
+  The complicated nature of Ethereum can also feed MEV. For example, it is hard to reap profits from only sending or receiving tokens. However, it is a different story if you engage in diverse financial activities like trading spots or derivatives. Lucrative MEV transactions such as arbitrages or liquidations will frequently arise. Sequencers will benefit from either directly capitalizing on such opportunities or receiving higher gas fees from searchers.
+
+  What demonstrates the complexity of Ethereum well is Defi. In the graph above, despite taking a hit from the recent crypto crash, Defi TVL has grown about 500% since September 2020. If you lengthen the time horizon a bit more, the current size of the Defi ecosystem is approximately 120 times larger than that in September 2019. As long as the crypto industry grows continuously in the long run, the Defi ecosystem will also expand, offering more MEV chances.
+  <br/>
+  <br/>
+  
+#### 3.1.3. Layer 2 protocols take their own share of MEV
+<br/>
+
+From now on, we assume there exists only one sequencer in each layer 2 protocol based on the premise of centralized block production.
+<br/>
+<br/>
+
+Even if MEV will not disappear as a whole, it does not guarantee a certain amount of MEV for individual layer 2 protocols. What if one or two dominant protocols take the whole pie? What if the competition among services is so fierce that the share for each platform is too small?
+
+We believe each layer 2 protocol will retain MEV with monopoly power from the heterogeneous layer 2 environments. At the same time, the partial homogeneity all the layer 2 services share will put a cap on monopoly power and thus MEV they can extract.
+<br/>
+<br/>
+
+![heteregeneous homogeneous](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-27%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.52.34.png)
+<br/>
+
+Tokamak Network expects a variety of layer 2 services to coexist, meeting diverse needs.  Regarding block production, it will get centralized due to cross-domain MEV.
+
+Since each protocol caters to specific needs, such as trading NFT or hedging risks with derivatives, layer 2 platforms can exert monopoly power over users. 
+
+We should also note that users rarely go to other networks once they get used to a specific platform.
+<br/>
+<br/>
+
+However, at the same time, all layer 2 protocols share some similarities in that they focus on scalability and rely on native token incentives.
+
+It implies that the monopoly power mentioned above is not limitless due to some competition among layer 2 services.
+<br/>
+<br/>
+
+![userMEV](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.41.30.png)
+<br/>
+
+The limited monopoly power affects the aggressiveness of sequencers in pursuing MEV chances.
+
+Based on the figure above, at first, MEV is zero because there are no users. As the popularity of the layer 2 protocols grows, more people come to networks, which leads to more MEV opportunities. Interestingly, MEV increases very fast until it reaches roll-up fees. It is because sequencers can actively pursue MEV transactions with monopoly power.
+
+However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers start to worry about whether MEV activity seriously erodes the common goods. Crossing the ‘red-line’ would mean users’ departure from protocols. The competition based on partial homogeneity works this time.
+<br/>
+<br/>
+
+**3.1.4. Numeric MEV modeling** 
+<br/>
+<br/>
+
+We have reasoned that MEV will remain in place, and each layer 2 protocol will have a part of MEV. It is finally time to check whether the actual data supports our argument. 
+<br/>
+<br/>
+
+While doing numeric modeling, we will refer to Boba Network for two reasons.
+
+First, Boba Network is an appropriate example of a relatively small protocol in a heterogeneous system. According to L2Beat, its current market share is approximately 0.59% as of October 5th, KST.
+
+Second, Boba Network is a good proxy for Tokamak Network. Both services utilize the optimistic roll-up technology. The size of networks, in terms of TVL, is quite similar, too.
