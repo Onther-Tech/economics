@@ -521,7 +521,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
 <br/>
 <br/>
 
-In conclusion, implications of our model are as follows:
+## 4. Implications
 <br/>
 <br/>
 
