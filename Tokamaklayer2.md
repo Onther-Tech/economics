@@ -213,7 +213,7 @@ However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers star
 <br/>
 <br/>
 
-**3.1.4. Numeric MEV modeling** 
+#### 3.1.4. Numeric MEV modeling
 <br/>
 <br/>
 
@@ -272,3 +272,205 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     Therefore, adapting the original data for our modeling is crucial.
     </br>
     </br>
+    
+    ![MEVbytype](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-26%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.01.14.png)
+    <br/>
+    <br/>
+    
+    ![MEVCEX](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-26%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.07.36.png)
+    <br/>
+    
+    First, the extracted MEV in the Flashbots Dashboard mostly comes from arbitrages. Considering liquidations are generally not more profitable than arbitrages, it is safe to assume all the extracted MEV comes from arbitrages.
+
+    Plus, arbitrages in the Flashbots data are through swap transactions in DEX. Since swap transactions are equivalent to spot transactions, we can complement the extracted MEV by reflecting the spot transactions in CEX:
+
+    27K USD + 27K USD / 0.1134 = 265K USD
+    <br/>
+    <br/>
+    
+    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.03.27.png)
+    <br/>
+    <br/>
+    
+    ![uniswapTVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.05.28.png)
+    <br/>
+    <br/>
+    
+    ![sandwich](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-04%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.39.41.png)
+    <br/>
+    <br/>
+    
+    Sandwich transactions cannot be ignored, too. Given the TVL difference, the cumulative sandwich profits in Ethereum are estimated as follows:
+
+    310,000 USD * 31.9 / 5.03 = 1.97M USD
+
+   Of course, since the number is in annualized terms, we can further update the extracted MEV as follows:
+
+    265K USD + 1.97M USD / 365 days = 270.4K USD
+    <br/>
+    <br/>
+    
+    ![MEVsplitbyroles](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-04%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%204.20.50.png)
+    <br/>
+    <br/>
+    
+    Unfortunately, MEV is not only for block producers or sequencers. Searchers can also capture MEV. If we only consider the share for miners or sequencers:
+
+    270.4K USD * 0.357 = 97K USD
+    <br/>
+    <br/>
+    
+    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.03.27.png)
+    <br/>
+    <br/>
+    
+    ![l2TVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.11.14.png)
+    <br/>
+    <br/>
+    
+    Finally, we have to interpret this layer 1 number in the context of layer 2. Assuming MEV is generally proportional to the size of financial activities within networks, the following calculation holds:
+
+    97K USD * (4.71/31.9) = 14K USD
+    <br/>
+    <br/>
+    
+- **Conclusion**
+    <br/>
+    <br/>
+
+![bobalocated](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.53.21.png)
+    <br/>
+    <br/>
+
+   Boba Network now expends daily roll-up fees worth 0.086 ~ 0.258 ETH or 115 ~ 346 USD.
+
+   The current market share of Boba Network is 0.59%. The estimated MEV a sequencer earns in Boba Network every day is 0.59% * 14K USD = 82.6 USD.
+
+   Therefore, Boba Network is expected to cover 24%~72% of layer 1 fees with MEV.
+    <br/>
+    <br/>
+    
+   Considering the thin user base of Boba Network, the result of modeling is aligned with our argument. For example, according to ETHTPS.info, its TPS is 0.03, much inferior to Ethereum.
+   <br/>
+   <br/>
+   
+   ### 3.2. TON seigniorage
+   <br/>
+    
+   The distribution of TON seigniorage will be proportional to 1) the amount of TON deposited in layer 2 ecosystems and 2) the amount of TON locked for layer 2 security.
+
+   The first standard encourages sequencers to attract more users, consolidating the ground for generating more MEV opportunities.
+
+   The second standard incentivizes sequencers to utilize MEV to pay layer 1 fees instead of swapping TON from transaction fees for ETH.
+<br/>
+<br/>
+
+#### 3.2.1. Terminologies
+<br/>
+<br/>
+
+- **TON seigniorage**
+    <br/>
+
+    Seigniorage is the difference between the value of a currency and the cost of issuing that currency. Since the issuance cost of TON is practically zero, TON seigniorage is just the market value of TON. Therefore, distributing TON seigniorage is the same as printing and giving out a new TON.
+<br/>
+
+- **Deposit / lock or stake TON**
+<br/>
+
+![depositvslock](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.27.05.png)
+    <br/>
+
+   Depositing TON implies putting TON into layer 2 networks to make transactions. 
+
+   Deposited TON is open to various possibilities. For instance, users can hold deposited TON like cash for future transactions. They can also lock or stake TON for a specific purpose. Notably, locked or staked TON loses the liquidity to perform the predetermined function.
+<br/>
+<br/>
+
+#### 3.2.2. TON seigniorage distribution based on the amount of TON deposited
+<br/>
+<br/>
+
+![depositedincentive](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.20.49.png)
+<br/>
+<br/>
+
+As discussed in the previous sections, MEV mitigates the fee token dilemma by allowing extra income for sequencers to handle layer 1 costs. Of course, more MEV chances will arise only if more users join networks.
+
+TON seigniorage based on the amount of TON deposited can facilitate such a process. Sequencers will strive to lure users because more users deposit more TON, leading to a higher portion of TON seigniorage for sequencers.
+<br/>
+<br/>
+
+#### 3.2.3. TON seigniorage distribution based on the amount of TON locked
+<br/>
+<br/>
+
+![lockedincentive](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.15.46.png)
+<br/>
+<br/>
+
+However, we have a problem. What if people sell deposited TON all at once within layer 2? It is technically possible because deposited TON is open to all transactions, including selling.
+
+The issue is also crucial to our scheme. When sequencers take transaction fees in TON, they must decide whether to 1) use MEV profits or 2) swap TON for ETH to pay layer 1 fees. Of course, the former option contributes to tackling the fee token dilemma.
+
+TON seigniorage distribution proportional to the amount of TON locked can guide sequencers as we want. TON from transaction fees will be locked for seigniorage. Of course, MEV revenue will cover layer 1 costs. If sequencers still stick to swapping TON for ETH, sacrificing the potential seigniorage revenue is inevitable.
+<br/>
+<br/>
+
+#### 3.2.4. Game-theoretic interpretation
+<br/>
+
+We can illustrate how the behaviors of sequencers change with TON seigniorage distribution in a game-theoretic structure.
+<br/>
+<br/>
+
+For this discussion, you first have to understand the payoff matrix. Payoff matrices show the benefits corresponding to specific actions by each entity. Notably, numbers in payoff matrices are in relative terms. For example, when the benefits of entity 1 and entity 2 are -2 and -1, respectively, absolute values of numbers do not matter. Instead, it just means that the loss of entity 1 is more than that of entity 2.
+
+The payoff matrices below are not different. The first column and first row are the possible behaviors by sequencers 1 and 2, respectively. The payoff of two sequencers is denoted as (payoff of sequencer 1, payoff of sequencer 2).
+<br/>
+<br/>
+
+![sellTONequil](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%202.26.37.png)
+<br/>
+<br/>
+
+Without TON seigniorage distribution, the advantageous action for both sequencers is to swap TON for ETH, regardless of the decision by the counterpart. The reason is quite simple. You earn nothing for locking TON. Worse, if one sequencer locks TON and the other swaps TON for ETH, locked TON will suffer from declining prices due to selling pressures.
+
+Therefore, both sequencers will sell TON from transaction fees to pay layer 1 fees and invest their assets, including MEV, in services offering higher returns.
+<br/>
+<br/>
+
+![lockequil](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%202.26.51.png)
+<br/>
+<br/>
+
+However, the whole narrative takes a 180-degree turn with TON seigniorage distribution. If you swap TON for ETH, it is the same as giving up rewards for locking TON. In other words, it will increase both the benefits of locking TON and the opportunity costs of swapping TON for ETH if we provide sufficient compensation for locked TON.
+
+Consequently, with TON seigniorage distribution, both sequencers lock TON from transaction fees and cover layer 1 fees with their money, including MEV.
+<br/>
+<br/>
+
+### 3.3. Tokamak Network: Freedom to choose
+<br/>
+
+It is finally time to incorporate all the ideas discussed into the concrete model. Within the Tokamak Network, each layer 2 protocol can establish tailored transaction fee policies. In this section, we will propose several possible combinations of institutions sequencers can introduce.
+<br/>
+
+#### 3.3.1. Nascent protocols
+<br/>
+
+- **TON seigniorage distribution**
+  <br/>
+  <br/>
+  
+  ![nofees](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.14.49.png)
+  <br/>
+  <br/>
+  
+  While competing with other dominant incumbents, it will be hard to attract users as nascent followers. Thus, we can introduce zero transaction fees in the early phase of the protocol. One step further, each transaction may be rewarded with a certain amount of TON.
+    <br/>
+    <br/>
+
+  As you can see, sequencers are likely to invest their money in the early stage of protocols. Therefore, the incentive mechanism is necessary to ensure that sequencers get credit for their performances. Here comes the TON seigniorage distribution proportional to the amount of TON deposited. As sequencers convince users of their merits, more TON will be deposited to make transactions, leading to more TON seigniorage for sequencers.
+
+  The TON seigniorage distribution proportional to the amount of TON locked can also work in that way. If sequencers lock a large amount of TON for seigniorage, they have big stakes to lose for their malicious behaviors. Users will interpret it as a sincere commitment to layer 2 security.
