@@ -37,7 +37,7 @@ UX can be improved, too. Users do not necessarily have to hold many ETH just for
 ### 1.2. Fee token dilemma
 <br/>
 
-![fee token dilemma](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-26%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.16.39.png)
+![fee token dilemma](https://github.com/Onther-Tech/economics/blob/main/fee_token_dilemma.png)
 <br/>
 
 Unfortunately, an extremely tricky issue has prevented many layer 2 protocols from allowing their tokens to be fee tokens: potential downward pressures on the token price.
@@ -61,7 +61,7 @@ However, you should also see the other side of the picture. Sequencers send the 
 OP token, the native token of Optimism, is not for paying transaction fees within the network. Instead, it only performs governance functions.
 <br/>
 
-![Optimism Collective](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-02%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.42.40.png)
+![Optimism Collective](https://github.com/Onther-Tech/economics/blob/main/optimism_collective.png)
 <br/>
 
 For example, Optimism Collective, together with Optimism Foundation, is responsible for governance in Optimism. In Token House, one of the two pillars supporting Optimism Collective, OP token holders can submit, deliberate, and vote on governance proposals, including protocol upgrades or inflation adjustment.
@@ -133,7 +133,7 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   <br/>
   <br/>
   
-  ![cumulative extracted MEV](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.16.10.png)
+  ![cumulative extracted MEV](https://github.com/Onther-Tech/economics/blob/main/cumulative_mev.png)
   <br/>
   
   The graph above shows that the cumulative extracted MEV has increased significantly over the last two years. As of now, approximately 676 million USD   of MEV has been extracted.
@@ -148,10 +148,10 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   <br/>
   <br/>
   
-  ![homogeneous](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-08%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.08.53.png)
+  ![homogeneous](https://github.com/Onther-Tech/economics/blob/main/homogeneous_layer2.png)
   <br/>
   
-  ![heterogeneous](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-27%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.51.15.png)
+  ![heterogeneous](https://github.com/Onther-Tech/economics/blob/main/heterogeneous_layer2.png)
   <br/>
   
   If the block production gets centralized, a small number of sequencers, if not only, handle transactions. Unlike decentralized sequencers, since there is less competition and uncertainties in becoming a block producer, it would be much easier to pursue MEV.
@@ -162,8 +162,7 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   <br/>
   <br/>
   
-  ![defi TVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-28%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%206.37.55.png)
-  <br/>
+  ![defi TVL](https://github.com/Onther-Tech/economics/blob/main/defi_tvl.png)
   <br/>
   
   The complicated nature of Ethereum can also feed MEV. For example, it is hard to reap profits from only sending or receiving tokens. However, it is a different story if you engage in diverse financial activities like trading spots or derivatives. Lucrative MEV transactions such as arbitrages or liquidations will frequently arise. Sequencers will benefit from either directly capitalizing on such opportunities or receiving higher gas fees from searchers.
@@ -185,7 +184,7 @@ We believe each layer 2 protocol will retain MEV with monopoly power from the he
 <br/>
 <br/>
 
-![heteregeneous homogeneous](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-27%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.52.34.png)
+![heteregeneous homogeneous](https://github.com/Onther-Tech/economics/blob/main/tokamak_layer2_future.png)
 <br/>
 
 Tokamak Network expects a variety of layer 2 services to coexist, meeting diverse needs.  Regarding block production, it will get centralized due to cross-domain MEV.
@@ -202,7 +201,7 @@ It implies that the monopoly power mentioned above is not limitless due to some 
 <br/>
 <br/>
 
-![userMEV](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.41.30.png)
+![userMEV](https://github.com/Onther-Tech/economics/blob/main/mev_users.png)
 <br/>
 
 The limited monopoly power affects the aggressiveness of sequencers in pursuing MEV chances.
@@ -272,11 +271,11 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     </br>
     </br>
     
-    ![MEVbytype](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-26%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.01.14.png)
+    ![MEVbytype](https://github.com/Onther-Tech/economics/blob/main/mev_by_type.png)
     <br/>
     <br/>
     
-    ![MEVCEX](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-26%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2012.07.36.png)
+    ![MEVCEX](https://github.com/Onther-Tech/economics/blob/main/dex_to_cex.png)
     <br/>
     
     First, the extracted MEV in the Flashbots Dashboard mostly comes from arbitrages. Considering liquidations are generally not more profitable than arbitrages, it is safe to assume all the extracted MEV comes from arbitrages.
@@ -287,15 +286,15 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     <br/>
     <br/>
     
-    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.03.27.png)
+    ![sandwich](https://github.com/Onther-Tech/economics/blob/main/sandwich_uniswap.png)
     <br/>
     <br/>
     
-    ![uniswapTVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.05.28.png)
+    ![uniswapTVL](https://github.com/Onther-Tech/economics/blob/main/uniswap_tvl.png)
     <br/>
     <br/>
     
-    ![sandwich](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-04%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.39.41.png)
+    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/ethereum_tvl.png)
     <br/>
     <br/>
     
@@ -309,7 +308,7 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     <br/>
     <br/>
     
-    ![MEVsplitbyroles](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-04%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%204.20.50.png)
+    ![MEVsplitbyroles](https://github.com/Onther-Tech/economics/blob/main/mev_by_role.png)
     <br/>
     <br/>
     
@@ -319,11 +318,11 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     <br/>
     <br/>
     
-    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.03.27.png)
+    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/ethereum_tvl.png)
     <br/>
     <br/>
     
-    ![l2TVL](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.11.14.png)
+    ![l2TVL](https://github.com/Onther-Tech/economics/blob/main/layer2_tvl.png)
     <br/>
     <br/>
     
@@ -336,24 +335,24 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
 - **Conclusion**
     <br/>
     <br/>
-
-![bobalocated](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%203.53.21.png)
-    <br/>
-    <br/>
-
-   Boba Network now expends daily roll-up fees worth 0.086 ~ 0.258 ETH or 115 ~ 346 USD.
-
-   The current market share of Boba Network is 0.59%. The estimated MEV a sequencer earns in Boba Network every day is 0.59% * 14K USD = 82.6 USD.
-
-   Therefore, Boba Network is expected to cover 24%~72% of layer 1 fees with MEV.
+    
+    ![bobalocated](https://github.com/Onther-Tech/economics/blob/main/mev_users_boba.png)
     <br/>
     <br/>
     
-   Considering the thin user base of Boba Network, the result of modeling is aligned with our argument. For example, according to ETHTPS.info, its TPS is 0.03, much inferior to Ethereum.
+    Boba Network now expends daily roll-up fees worth 0.086 ~ 0.258 ETH or 115 ~ 346 USD.
+    
+    The current market share of Boba Network is 0.59%. The estimated MEV a sequencer earns in Boba Network every day is 0.59% * 14K USD = 82.6 USD.
+    
+    Therefore, Boba Network is expected to cover 24%~72% of layer 1 fees with MEV.
+    <br/>
+    <br/>
+    
+    Considering the thin user base of Boba Network, the result of modeling is aligned with our argument. For example, according to ETHTPS.info, its TPS is 0.03, much inferior to Ethereum.
    <br/>
    <br/>
-   
-   ### 3.2. TON seigniorage
+      
+### 3.2. TON seigniorage
    <br/>
     
    The distribution of TON seigniorage will be proportional to 1) the amount of TON deposited in layer 2 ecosystems and 2) the amount of TON locked for layer 2 security.
@@ -374,22 +373,21 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
 <br/>
 
 - **Deposit / lock or stake TON**
-<br/>
-
-![depositvslock](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%202.27.05.png)
+  <br/>
+  
+  ![depositvslock](https://github.com/Onther-Tech/economics/blob/main/deposit_lock_stake.png)
     <br/>
 
    Depositing TON implies putting TON into layer 2 networks to make transactions. 
 
    Deposited TON is open to various possibilities. For instance, users can hold deposited TON like cash for future transactions. They can also lock or stake TON for a specific purpose. Notably, locked or staked TON loses the liquidity to perform the predetermined function.
 <br/>
-<br/>
 
 #### 3.2.2. TON seigniorage distribution based on the amount of TON deposited
 <br/>
 <br/>
 
-![depositedincentive](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-22%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%203.20.49.png)
+![depositedincentive](https://github.com/Onther-Tech/economics/blob/main/seigniorage_deposited.png)
 <br/>
 <br/>
 
@@ -403,7 +401,7 @@ TON seigniorage based on the amount of TON deposited can facilitate such a proce
 <br/>
 <br/>
 
-![lockedincentive](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.15.46.png)
+![lockedincentive](https://github.com/Onther-Tech/economics/blob/main/seigniorage_locked.png)
 <br/>
 <br/>
 
@@ -428,7 +426,7 @@ The payoff matrices below are not different. The first column and first row are 
 <br/>
 <br/>
 
-![sellTONequil](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%202.26.37.png)
+![sellTONequil](https://github.com/Onther-Tech/economics/blob/main/payoff_default.png)
 <br/>
 <br/>
 
@@ -438,7 +436,7 @@ Therefore, both sequencers will sell TON from transaction fees to pay layer 1 fe
 <br/>
 <br/>
 
-![lockequil](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%202.26.51.png)
+![lockequil](https://github.com/Onther-Tech/economics/blob/main/payoff_seigniorage.png)
 <br/>
 <br/>
 
@@ -453,6 +451,7 @@ Consequently, with TON seigniorage distribution, both sequencers lock TON from t
 
 It is finally time to incorporate all the ideas discussed into the concrete model. Within the Tokamak Network, each layer 2 protocol can establish tailored transaction fee policies. In this section, we will propose several possible combinations of institutions sequencers can introduce.
 <br/>
+<br/>
 
 #### 3.3.1. Nascent protocols
 <br/>
@@ -461,7 +460,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   <br/>
   <br/>
   
-  ![nofees](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.14.49.png)
+  ![nofees](https://github.com/Onther-Tech/economics/blob/main/zero_transaction_fees.png)
   <br/>
   <br/>
   
@@ -481,7 +480,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   <br/>
   <br/>
   
-  ![paidservice](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%209.07.41.png)
+  ![paidservice](https://github.com/Onther-Tech/economics/blob/main/tiered_transaction_fees.png)
   <br/>
   <br/>
   
@@ -498,7 +497,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
 - **TON seigniorage distribution**
   <br/>
   
-  ![noswap](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-29%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%2010.03.50%20(1).png)
+  ![noswap](https://github.com/Onther-Tech/economics/blob/main/ton_feetoken.png)
   <br/>
   <br/>
   
@@ -525,7 +524,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
 <br/>
 <br/>
 
-![structure](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-10-05%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%205.13.27.png)
+![structure](https://github.com/Onther-Tech/economics/blob/main/summary.png)
 <br/>
 <br/>
 
@@ -547,7 +546,7 @@ In conclusion, implications of our model are as follows:
 - **Centralized but censorship-resistant block production**
   <br/>
   
-  ![censorresistant](https://github.com/Onther-Tech/economics/blob/main/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202022-09-08%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%207.37.38.png)
+  ![censorresistant](https://github.com/Onther-Tech/economics/blob/main/censorship_resistant.png)
   <br/>
   <br/>
   
