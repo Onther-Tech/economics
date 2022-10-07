@@ -1,6 +1,6 @@
 # How to unravel fee token dilemma in layer 2
 
-*Special thanks to Kevin.J, Darren.K, Nomad.I, Jake.J, Suah.K, Praveen.S, and Jamie for the productive feedback on the posting.*
+*Special thanks to Kevin.J, Darren.K, Nomad.I, Jake.J, Suah.K, Praveen.S, and Jamie.J for the productive feedback on the posting.*
 <br/>
 <br/>
 ## 0. Introduction
@@ -186,9 +186,7 @@ We believe each layer 2 protocol will retain MEV with monopoly power from the he
 ![heteregeneous homogeneous](https://github.com/Onther-Tech/economics/blob/main/tokamak_layer2_future.png)
 <br/>
 
-Tokamak Network expects a variety of layer 2 services to coexist, meeting diverse needs.  Regarding block production, it will get centralized due to cross-domain MEV.
-
-Since each protocol caters to specific needs, such as trading NFT or hedging risks with derivatives, layer 2 platforms can exert monopoly power over users. 
+Tokamak Network expects a variety of layer 2 services to coexist, meeting diverse needs.  Regarding block production, it will get centralized due to cross-domain MEV. Since each protocol caters to specific needs, such as trading NFT or hedging risks with derivatives, layer 2 platforms can exert monopoly power over users. 
 
 We should also note that users rarely go to other networks once they get used to a specific platform.
 <br/>
