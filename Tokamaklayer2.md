@@ -186,15 +186,13 @@ We believe each layer 2 protocol will retain MEV with monopoly power from the he
 ![heteregeneous homogeneous](https://github.com/Onther-Tech/economics/blob/main/tokamak_layer2_future.png)
 <br/>
 
-Tokamak Network expects a variety of layer 2 services to coexist, meeting diverse needs.  Regarding block production, it will get centralized due to cross-domain MEV. Since each protocol caters to specific needs, such as trading NFT or hedging risks with derivatives, layer 2 platforms can exert monopoly power over users. 
-
-We should also note that users rarely go to other networks once they get used to a specific platform.
+Tokamak Network expects a variety of layer 2 services to coexist, meeting diverse needs. While pursuing the same ideal of enhancing scalability, each layer 2 protocol will differentiate itself from others by specializing in certain areas. Some platforms may try to minimize slippage in swap transactions, whereas others can focus on offering a more comprehensive range of liquidity pools.
 <br/>
 <br/>
 
-However, at the same time, all layer 2 protocols share some similarities in that they focus on scalability and rely on native token incentives.
+Consequently, layer 2 networks can exert monopoly power over users in a restrictive manner. Monopoly power exists because it will be hard to find the same functions targetting the specific necessity in many platforms. 
 
-It implies that the monopoly power mentioned above is not limitless due to some competition among layer 2 services.
+However, sequencers should not abuse monopoly power due to the competition based on scalability, the property all the layer 2 networks share. Suppose one protocol wields monopoly power to the point where its harms outweigh the benefits of customized functions. In that case,  users will abandon the protocol and flock to competitors with comparable performances in scalability.
 <br/>
 <br/>
 
@@ -205,7 +203,7 @@ The limited monopoly power affects the aggressiveness of sequencers in pursuing 
 
 Based on the figure above, at first, MEV is zero because there are no users. As the popularity of the layer 2 protocols grows, more people come to networks, which leads to more MEV opportunities. Interestingly, MEV increases very fast until it reaches roll-up fees. It is because sequencers can actively pursue MEV transactions with monopoly power.
 
-However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers start to worry about whether MEV activity seriously erodes the common goods. Crossing the ‘red-line’ would mean users’ departure from protocols. The competition based on partial homogeneity works this time.
+However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers start to worry about whether MEV activity seriously erodes the common good. Crossing the ‘red line’ would mean users’ departure from protocols. The competition based on partial homogeneity works this time.
 <br/>
 <br/>
 
@@ -218,7 +216,7 @@ We have reasoned that MEV will remain in place, and each layer 2 protocol will h
 
 While doing numeric modeling, we will refer to Boba Network for two reasons.
 
-First, Boba Network is an appropriate example of a relatively small protocol in a heterogeneous system. According to L2Beat, its current market share is approximately 0.59% as of October 5th, KST.
+First, Boba Network is an appropriate example of a relatively small protocol in a heterogeneous system. According to L2Beat, its current market share is approximately 0.59%.
 
 Second, Boba Network is a good proxy for Tokamak Network. Both services utilize the optimistic roll-up technology. The size of networks, in terms of TVL, is quite similar, too.
 <br/>
@@ -253,10 +251,10 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
 
  1. average amount of gas required per transaction & state batch: 358,248
  2. gas price: 10~30 gwei (reflecting the recent downward trend in gas prices)
- 3. **daily roll-up fees:** 358,248*(10~30 gwei)*24 = 86 ~258 million gwei = 0.086 ~ 0.258 ETH
+ 3. **daily roll-up fees:** 358,248*(10~30 gwei)*24 = 86 ~258 million gwei = **0.086 ~ 0.258 ETH**
 <br/>
 
-- **Estimated MEV a sequencer earns**
+- **Estimated MEV a sequencer extracts**
     <br/>
     <br/>
     
@@ -279,7 +277,7 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
 
     Plus, arbitrages in the Flashbots data are through swap transactions in DEX. Since swap transactions are equivalent to spot transactions, we can complement the extracted MEV by reflecting the spot transactions in CEX:
 
-    27K USD + 27K USD / 0.1134 = 265K USD
+    **27K USD + 27K USD / 0.1134 = 265K USD**
     <br/>
     <br/>
     
@@ -297,11 +295,11 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     
     Sandwich transactions cannot be ignored, too. Given the TVL difference, the cumulative sandwich profits in Ethereum are estimated as follows:
 
-    310,000 USD * 31.9 / 5.03 = 1.97M USD
+    **310,000 USD * 31.9 / 5.03 = 1.97M USD**
 
    Of course, since the number is in annualized terms, we can further update the extracted MEV as follows:
 
-    265K USD + 1.97M USD / 365 days = 270.4K USD
+    **265K USD + 1.97M USD / 365 days = 270.4K USD**
     <br/>
     <br/>
     
@@ -311,11 +309,7 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     
     Unfortunately, MEV is not only for block producers or sequencers. Searchers can also capture MEV. If we only consider the share for miners or sequencers:
 
-    270.4K USD * 0.357 = 97K USD
-    <br/>
-    <br/>
-    
-    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/ethereum_tvl.png)
+    **270.4K USD * 0.357 = 97K USD**
     <br/>
     <br/>
     
@@ -323,9 +317,13 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     <br/>
     <br/>
     
+    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/ethereum_tvl.png)
+    <br/>
+    <br/>
+    
     Finally, we have to interpret this layer 1 number in the context of layer 2. Assuming MEV is generally proportional to the size of financial activities within networks, the following calculation holds:
 
-    97K USD * (4.71/31.9) = 14K USD
+    **97K USD * (4.71/31.9) = 14K USD**
     <br/>
     <br/>
     
@@ -345,7 +343,9 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     <br/>
     <br/>
     
-    Considering the thin user base of Boba Network, the result of modeling is aligned with our argument. For example, according to ETHTPS.info, its TPS is 0.03, much inferior to Ethereum.
+    The result is consistent with our argument, given that Boba Network is an emergent platform with a growing user base. For example, according to ETHTPS.info, its TPS is 0.03, still not matching Ethereum.
+    
+    We also note that potential off-chain MEV, as defined earlier, is not included in the data due to difficulties in obtaining credible data. Once off-chain MEV gets attention, it will be much easier to cover layer 1 costs with MEV profits.
    <br/>
    <br/>
       
@@ -369,7 +369,7 @@ Second, Boba Network is a good proxy for Tokamak Network. Both services utilize 
     Seigniorage is the difference between the value of a currency and the cost of issuing that currency. Since the issuance cost of TON is practically zero, TON seigniorage is just the market value of TON. Therefore, distributing TON seigniorage is the same as printing and giving out a new TON.
 <br/>
 
-- **Deposit / lock or stake TON**
+- **Deposit / lock / stake TON**
   <br/>
   
   ![depositvslock](https://github.com/Onther-Tech/economics/blob/main/deposit_lock_stake.png)
@@ -498,10 +498,10 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   <br/>
   <br/>
   
-  TON seigniorage performs a similar role in mature protocols: encourage sequencers to maintain loyal users and capture new users.
+  TON seigniorage performs similarly in mature protocols: encourage sequencers to maintain loyal users and capture new users.
   <br/>
   <br/>
-  However, we must not miss one additional function: discourage sequencers from swapping TON for ETH. There is no way to force sequencers to use MEV to cover security fees. Despite making an adequate amount of MEV, they can still swap TON from transaction fees for ETH to pay layer 1 fees. TON seigniorage distribution based on the amount of TON locked raises the opportunity costs of such actions. If sequencers decide to sell TON from transaction fees, they give up potential benefits from TON seigniorage.
+  However, we must not miss one additional function: discourage sequencers from swapping TON for ETH. There is no way to force sequencers to use MEV to cover layer 1 fees. Despite making an adequate amount of MEV, they can still swap TON from transaction fees for ETH to pay layer 1 fees. TON seigniorage distribution based on the amount of TON locked raises the opportunity costs of such actions. If sequencers decide to sell TON from transaction fees, they give up potential benefits from TON seigniorage.
 <br/>
 
 - **MEV**
@@ -552,7 +552,12 @@ In conclusion, implications of our model are as follows:
   <br/>
   
 - **Curtailed negative externalities of MEV**
+  <br/>
 
   MEV has long been criticized for degrading UX. For this reason, leading layer 2 protocols have struggled to resolve the problem. For instance, Optimism aims at diverting MEV to common goods within the network through the MEV auction. On the other hand, Arbitrum tries to minimize MEV itself with decentralized sequencers. It has reportedly been exploring the Fair Sequencing Service by Chainlink.
+   <br/>
+   <br/>
 
   Our approach is more like the one taken by Optimism. While admitting the presence of MEV, Tokamak Network plans to alleviate the negative externalities of MEV by making it contribute to the fee token utility of TON.
+  
+  If MEV exceeds roll-up fees, the surplus can go to devoted users and developers, further diluting the side effects of MEV.
