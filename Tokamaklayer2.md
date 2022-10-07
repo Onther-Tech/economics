@@ -1,4 +1,4 @@
-# How to solve fee token dilemma in Tokamak Network
+# How to unravel fee token dilemma in layer 2
 
 *Special thanks to Kevin.J, Darren.K, Nomad.I, Jake.J, Suah.K, Praveen.S, and Jamie for the productive feedback on the posting.*
 <br/>
@@ -6,15 +6,13 @@
 ## 0. Introduction
 <br/>
 
-Layer 2 is a collective term for a specific set of Ethereum scaling solutions without severely sacrificing security and decentralization. While layer 2 executes heavy computations off-chain, it relies on layer 1 or Ethereum for security and decentralization.
+Layer 2 is a collective term for a specific set of Ethereum scaling solutions without severely sacrificing security and decentralization. While layer 2 executes heavy computations off-chain, it relies on Ethereum for security and decentralization.
 <br/>
 <br/>
 
-Tokamak Network has been striving to establish an on-demand layer 2 protocol. More specifically, optimistic roll-up, adopted by platforms like Optimism or Boba Network, will be at the core of our service. Being ‘optimistic’ implies that we assume the validity of transactions unless there is a challenge. If transactions get ‘rolled-up,’ multiple transactions are collected into a batch and submitted to layer 1 at once. 
+Tokamak Network has been striving to establish an on-demand layer 2 protocol. You can not only build your own layer 2 networks but freely communicate with other networks within Tokamak Network. Among various layer 2 technologies, optimistic roll-up, adopted by platforms like Optimism or Boba Network, will embody our mission. Being ‘optimistic’ implies that we assume the validity of transactions unless there is a challenge. If transactions get ‘rolled up,’ multiple transactions are collected into a batch and submitted to Ethereum at once. 
 
-In the process, TON, the native token of Tokamak Network, must play a pivotal role in incentivizing users to act in an advantageous way for the protocol. In this context, diversifying the utilities of TON is crucial. 
-
-Among possible utilities like governance or staking, we will exclusively discuss the way to maximize the utility of TON as a fee token in this paper.
+In the process, TON, the native token of Tokamak Network, must play a pivotal role in incentivizing users to act in an advantageous way for the protocol. In this context, diversifying the utilities of TON is crucial. Among possible utilities such as governance or staking, we will exclusively discuss the way to maximize the utility of TON as a fee token in this article.
 <br/>
 <br/>
 
@@ -24,13 +22,13 @@ Among possible utilities like governance or staking, we will exclusively discuss
 ### 1.1. Why TON to be a fee token?
 <br/>
 
-If TON is a fee token, we can pay transaction fees in TON.
+If TON is a fee token, users can pay transaction fees in TON.
 <br/>
 <br/>
 
 Why is it so important? No matter which applications or services people use on blockchains, making transactions is unavoidable. When you stake TON, it is a transaction. When you swap ETH for TON, it is a transaction as well. In other words, fee token utility guarantees the baseline demand for TON.
 
-UX can be improved, too. Users do not necessarily have to hold many ETH just for transaction fees.
+Adding TON to the list of fee tokens also improves UX by offering more options for users. They do not necessarily have to hold many ETH just for transaction fees. 
 <br/>
 <br/>
 
@@ -44,11 +42,11 @@ Unfortunately, an extremely tricky issue has prevented many layer 2 protocols fr
 <br/>
 <br/>
 
-The picture above shows how the ‘fee token dilemma’ arises. Layer 1 describes the underlying blockchain architecture responsible for the security and decentralization of layer 2 networks. Sequencers are entities entitled to produce blocks in the layer 2 environment. 
+The picture above shows how the ‘fee token dilemma’ arises. Layer 1 describes the underlying blockchain architecture responsible for the security and decentralization of layer 2 networks. In our discussion, Ethereum is layer 1. Sequencers are entities entitled to produce blocks in the layer 2 environment. 
 
 Let’s look at the bright side first. When users make transactions, they purchase TON to pay transaction fees, boosting the price of TON.
 
-However, you should also see the other side of the picture. Sequencers send the information on a bunch of layer 2 transactions to layer 1 for security. The problem is that the security fees incur, and sequencers must pay these fees in ETH. Consequently, despite taking transaction fees in TON, sequencers swap some TON for ETH to pay layer 1 fees. Of course, it would bring down the price of TON.
+However, you should also see the other side of the picture. Sequencers send the information on a bunch of layer 2 transactions to layer 1 for security. The problem is that the security or layer 1 fees incur, and sequencers must pay these fees in ETH. Consequently, despite taking transaction fees in TON, sequencers swap some TON for ETH to cover layer 1 costs. Of course, it would bring down the price of TON.
 <br/>
 <br/>
 
@@ -64,7 +62,7 @@ OP token, the native token of Optimism, is not for paying transaction fees withi
 ![Optimism Collective](https://github.com/Onther-Tech/economics/blob/main/optimism_collective.png)
 <br/>
 
-For example, Optimism Collective, together with Optimism Foundation, is responsible for governance in Optimism. In Token House, one of the two pillars supporting Optimism Collective, OP token holders can submit, deliberate, and vote on governance proposals, including protocol upgrades or inflation adjustment.
+For example, Optimism Collective, together with Optimism Foundation, is responsible for governance in Optimism. In Token House, one of the two pillars supporting Optimism Collective, OP token holders can submit, deliberate, and vote on governance proposals, including protocol upgrades or inflation adjustments.
 <br/>
 <br/>
 
@@ -79,7 +77,7 @@ However, Boba Network does not directly tackle the fee token dilemma. If necessa
 
 Instead, it tries to indirectly assuage the dilemma by combining governance with staking. If users want to participate in the decision-making process of Boba Network, they should stake BOBA. Additionally, a portion of transaction fees accrues to staked BOBA.
 
-In other words, Boba network utilizes incentives so that more BOBA remains within the protocol.
+In other words, Boba network utilizes incentives so that more BOBA remains staked. Staked BOBA can partially offset selling pressures seen in the fee token dilemma.
 <br/>
 <br/>
 
@@ -93,7 +91,7 @@ Tokamak Network wants TON to be a fee token. Plus, we directly deal with the fee
 ### 3.1. MEV(Maximal Extractable Value)
 <br/>
 
-The broader sense of MEV will remain intact in the long run. In addition, sequencers in each layer 2 protocol will manage to capture their share of MEV. It will help them cover layer 1 fees.
+The broader sense of MEV will remain intact in the long run. Instead of swapping TON from transaction fees for ETH, sequencers can utilize MEV profits to pay layer 1 fees.
 <br/>
 <br/>
 
@@ -105,9 +103,9 @@ The broader sense of MEV will remain intact in the long run. In addition, sequen
     
     In technical terms, MEV refers to the maximum value extracted from block production in excess of the standard block reward and gas fees by including, excluding, and changing the order of transactions in a block.
     
-    DEX arbitrage is one of the most well-known MEV examples. Let’s say two exchanges put a different price tag on the same token. In this case, buying the token at a discount and immediately selling it at a premium generate profits.
+    DEX arbitrage is one of the most well-known MEV examples. Let’s say two exchanges put a different price tag on the same token. Then, buying the token at a discount and immediately selling it at a premium generate profits. Of course, the selling transaction must be right after the buying transaction. If other transactions come in between these two transactions, arbitrage may not hold.
     
-    Notably, MEV is not just for block producers or sequencers. Searchers, a group of users specialized in spotting MEV opportunities with advanced algorithms or bots, can also benefit from MEV. Of course, a part of profits for searchers goes to sequencers in the form of higher gas fees. Searchers should split the MEV benefits to include their transactions first in a block.
+    Notably, MEV is not just for block producers or sequencers. Searchers, a group of users specialized in spotting MEV opportunities with advanced algorithms or bots, can also benefit from MEV. In general, a part of profits for searchers goes to sequencers in the form of higher gas fees. Searchers should split the MEV benefits with sequencers to include their transactions first in a block.
  <br/>
 
 - **Redefinition of MEV**
@@ -115,17 +113,17 @@ The broader sense of MEV will remain intact in the long run. In addition, sequen
   
   However, the definition of MEV above is primarily about on-chain transactions. We do believe that off-chain MEV chances also exist.
 
-  For example, if a sequencer gets compensated for putting transactions by a specific group of users first in a block, it can add to MEV, too. Users can   also pay for inserting transactions at a certain point of time in a block.
+  For example, if a sequencer gets compensated for putting transactions by a specific group of users first in a block, it can add to MEV, too. Users       may also pay for inserting transactions at a certain time in a block.
 
-  Therefore, In this article, MEV refers to the maximum value derived from block production more than the standard block reward and gas fees. It can be   by either directly changing the sequence of transactions or selling the rights to do such actions. In other words, MEV essentially comes from the       discretion to construct blocks, either on-chain or off-chain.
+  Therefore, in this article, MEV refers to the maximum value derived from block production more than the standard block reward and gas fees. It can be   by either directly changing the sequence of transactions or selling the rights to do such actions. In other words, MEV essentially comes from the       discretion to construct blocks, either on-chain or off-chain.
  <br/>
  
 #### 3.1.2. MEV will not disappear
  <br/>
  
-If MEV decreases significantly in the future, it cannot be a credible source of income for sequencers to deal with layer 1 fees. In this sense, the sustainability of MEV is essential.
+If MEV decreases significantly in the future, it cannot be a reliable source of income for sequencers to deal with layer 1 fees. In this sense, the sustainability of MEV is essential.
 
-With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) centralized block production and 2) complexity in Ethereum.
+With the steadily increasing trend, MEV is unlikely to disappear thanks to centralized block production and complexity in Ethereum.
 <br/>
 <br/>
 
@@ -138,7 +136,7 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   
   The graph above shows that the cumulative extracted MEV has increased significantly over the last two years. As of now, approximately 676 million USD   of MEV has been extracted.
 
-  More importantly, this figure only considers the MEV from arbitrages and liquidations. Some lucrative MEV opportunities, including sandwich             transactions, have been omitted. Plus, even in arbitrages, CEX-DEX arbitrages have not been counted due to the lack of information related to the CEX   component. On top of that, potential off-chain MEV transactions are off the table, too.
+  More importantly, this figure only considers the MEV from arbitrages and liquidations. Some lucrative MEV opportunities, including sandwich transactions, have been omitted. Plus, it has excluded CEX-DEX arbitrages in calculations due to the lack of information. On top of that, potential off-chain MEV transactions are off the table, too.
 
   Consequently, the actual MEV, as we defined earlier, is likely to be much larger than the number measured by Flashbots.
   <br/>
@@ -154,7 +152,7 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   ![heterogeneous](https://github.com/Onther-Tech/economics/blob/main/heterogeneous_layer2.png)
   <br/>
   
-  If the block production gets centralized, a small number of sequencers, if not only, handle transactions. Unlike decentralized sequencers, since there is less competition and uncertainties in becoming a block producer, it would be much easier to pursue MEV.
+  If the block production gets centralized, a small number of sequencers, if not only, handle transactions. Unlike decentralized sequencers, since there is less competition and uncertainties in becoming a block producer, it would be much easier to extract MEV.
 
   Then, how does block production get centralized? It is closely related to the future layer 2 landscape proposed by Vitalik Buterin. The figure above illustrates the two possibilities discussed in his famous article ‘Endgame’: 1) a homogenous system where a small number of similar chains handle most of the Ethereum activities or 2) a heterogeneous system where multiple different chains cater to diverse needs. 
 
@@ -164,10 +162,11 @@ With the steadily increasing trend, MEV is unlikely to disappear thanks to 1) ce
   
   ![defi TVL](https://github.com/Onther-Tech/economics/blob/main/defi_tvl.png)
   <br/>
+  <br/>
   
-  The complicated nature of Ethereum can also feed MEV. For example, it is hard to reap profits from only sending or receiving tokens. However, it is a different story if you engage in diverse financial activities like trading spots or derivatives. Lucrative MEV transactions such as arbitrages or liquidations will frequently arise. Sequencers will benefit from either directly capitalizing on such opportunities or receiving higher gas fees from searchers.
+  The complicated nature of Ethereum can also feed MEV. For example, it is hard to reap profits from only sending or receiving tokens. However, it is a different story if you engage in diverse financial activities like trading spots or derivatives. Profitable MEV transactions such as arbitrages or liquidations will frequently pop up. Sequencers will benefit from either directly capitalizing on such opportunities or receiving higher gas fees from searchers.
 
-  What demonstrates the complexity of Ethereum well is Defi. In the graph above, despite taking a hit from the recent crypto crash, Defi TVL has grown about 500% since September 2020. If you lengthen the time horizon a bit more, the current size of the Defi ecosystem is approximately 120 times larger than that in September 2019. As long as the crypto industry grows continuously in the long run, the Defi ecosystem will also expand, offering more MEV chances.
+  What demonstrates the complexity of Ethereum well is Defi. In the graph above, despite taking a hit from the recent crypto crash, Defi TVL has grown about 500% since September 2020. If you lengthen the time horizon a bit more, the current size of the Defi ecosystem is approximately 120 times larger than that in September 2019. As long as the crypto industry grows continuously in the long run, the Defi ecosystem will also expand, providing more MEV chances.
   <br/>
   <br/>
   
