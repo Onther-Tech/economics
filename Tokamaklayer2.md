@@ -561,3 +561,17 @@ In conclusion, implications of our model are as follows:
   Our approach is more like the one taken by Optimism. While admitting the presence of MEV, Tokamak Network plans to alleviate the negative externalities of MEV by making it contribute to the fee token utility of TON.
   
   If MEV exceeds roll-up fees, the surplus can go to devoted users and developers, further diluting the side effects of MEV.
+<br/>
+<br/>
+
+## References
+<br/>
+<br/>
+
+https://ethereum.org/en/developers/docs/mev/
+</br>
+
+https://vitalik.ca/general/2021/12/06/endgame.html
+<br/>
+
+https://research.paradigm.xyz/MEV
