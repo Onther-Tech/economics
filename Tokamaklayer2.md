@@ -69,7 +69,7 @@ For example, Optimism Collective, together with Optimism Foundation, is responsi
 ### 2.2. Boba Network
 <br/>
 
-Unlike Optimism, Boba Network has a dual-fee token system. Although ETH is a default fee token, users can also choose to pay transaction fees in the BOBA token. If using BOBA as a fee token, users get a 25% discount.
+Unlike Optimism, Boba Network has a dual-fee token system. Although ETH is a default fee token, users can also choose to pay transaction fees in the BOBA token. If BOBA is chosen as a fee token, users get a 25% discount.
 <br/>
 <br/>
 
