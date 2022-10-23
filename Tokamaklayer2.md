@@ -103,20 +103,21 @@ The broader sense of MEV will remain intact in the long run. Instead of swapping
     
     In technical terms, MEV refers to the maximum value extracted from block production in excess of the standard block reward and gas fees by including, excluding, and changing the order of transactions in a block.
     
-    DEX arbitrage is one of the most well-known MEV examples. Let’s say two exchanges put a different price tag on the same token. Then, buying the token at a discount and immediately selling it at a premium generate profits. Of course, the selling transaction must be right after the buying transaction. If other transactions come in between these two transactions, arbitrage may not hold.
+    DEX arbitrage is one of the most well-known MEV examples. Let’s say two exchanges put a different price tag on the same token. Then, buying the token at a discount and immediately selling it at a premium generate profits. Of course, the selling transaction must be right after the buying transaction. If other transactions come in between these two transactions, arbitrage may not hold due to potential price volatility. In addition, the arbitrage transaction has to come before any other transaction involving the token. Otherwise, with the token price changed, the opportunity would be gone.
     
-    Notably, MEV is not just for block producers or sequencers. Searchers, a group of users specialized in spotting MEV opportunities with advanced algorithms or bots, can also benefit from MEV. In general, a part of profits for searchers goes to sequencers in the form of higher gas fees. Searchers should split the MEV benefits with sequencers to include their transactions first in a block.
+    Notably, MEV is not just for block producers. Searchers, a group of users specialized in spotting MEV opportunities with advanced algorithms or bots, can also benefit from MEV. In general, searchers should split the MEV benefits with block producers to include their transactions first in a block. For instance, in the case of arbitrage we just mentioned, even if a searcher finds the chance first, other searchers can snatch it by offering higher fees to block producers.
  <br/>
 
 - **Redefinition of MEV**
   <br/>
   
-  However, the definition of MEV above is primarily about on-chain transactions. We do believe that off-chain MEV chances also exist.
+    The definition of MEV above is primarily about taking profitable opportunities from a sea of transactions. However, we can also think about institutions to generate more value. More specifically, creating additional MEV chances is possible by designing policies that align the specific willingness to pay with corresponding needs.
 
-  For example, if a sequencer gets compensated for putting transactions by a specific group of users first in a block, it can add to MEV, too. Users       may also pay for inserting transactions at a certain time in a block.
+    For example, if a sequencer gets compensated for putting transactions by a specific group of users first in a block, it can add to MEV, too. Users may also pay for inserting transactions at a particular time in a block.
 
-  Therefore, in this article, MEV refers to the maximum value derived from block production more than the standard block reward and gas fees. It can be   by either directly changing the sequence of transactions or selling the rights to do such actions. In other words, MEV essentially comes from the       discretion to construct blocks, either on-chain or off-chain.
- <br/>
+    Therefore, in this article, MEV refers to the maximum value, more than standard rewards, created by selling the rights to change the sequence of transactions in a block. It can be in the form of either fee competition or transaction policies. FYI, if block producers pursue MEV opportunities for themselves, it is the same as buying the rights for free.  
+   <br/>
+   <br/>
  
 #### 3.1.2. MEV will not disappear
  <br/>
