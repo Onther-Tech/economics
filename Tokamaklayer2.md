@@ -26,7 +26,8 @@ If TON is a fee token, users can pay transaction fees in TON.
 <br/>
 <br/>
 
-Why is it so important? No matter which applications or services people use on blockchains, making transactions is unavoidable. When you stake TON, it is a transaction. When you swap ETH for TON, it is a transaction as well. In other words, fee token utility guarantees the baseline demand for TON.
+Why is it so important?  First, fee token utility guarantees the baseline demand for TON.
+No matter which applications or services people use on blockchains, making transactions is unavoidable. When you stake TON, it is a transaction. When you swap ETH for TON, it is a transaction as well. 
 
 Adding TON to the list of fee tokens also improves UX by offering more options for users. They do not necessarily have to hold many ETH just for transaction fees. 
 <br/>
@@ -38,7 +39,7 @@ Adding TON to the list of fee tokens also improves UX by offering more options f
 ![fee token dilemma](https://github.com/Onther-Tech/economics/blob/main/fee_token_dilemma.png)
 <br/>
 
-Unfortunately, an extremely tricky issue has prevented many layer 2 protocols from allowing their tokens to be fee tokens: potential downward pressures on the token price.
+Unfortunately, an extremely tricky issue has prevented many layer 2 protocols from allowing their tokens to be fee tokens: potential downward pressures on the token price from swapping TON for ETH to pay layer 1 fees.
 <br/>
 <br/>
 
