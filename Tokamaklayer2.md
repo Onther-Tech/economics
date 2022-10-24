@@ -1,6 +1,6 @@
 # How to unravel fee token dilemma in layer 2
 
-*Special thanks to Kevin.J, Darren.K, Nomad.I, Jake.J, Suah.K, Praveen.S, and Jamie.J for the productive feedback on the posting.*
+*Special thanks to Kevin.J, Darren.K, Nomad.I, Jake.J, Suah.K, Praveen.S, Jamie.J, and Theo.L for the productive feedback on the posting.*
 <br/>
 <br/>
 ## 0. Introduction
@@ -209,18 +209,16 @@ However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers star
 <br/>
 <br/>
 
-#### 3.1.4. Numeric MEV modeling
+#### 3.1.4. Feasibility Test: numerical data
 <br/>
 
-We have reasoned that MEV will remain in place, and each layer 2 protocol will have a part of MEV. It is finally time to check whether the actual data supports our argument. 
+We have reasoned that MEV will remain in place, and each layer 2 protocol will have a part of MEV. It is finally time to check whether the actual data on the following two items supports our argument: 1) layer 1 or roll-up fees and 2) estimated MEV a sequencer extracts.
 <br/>
+
+As for roll-up fees, we will refer to Boba Network for two reasons. First, Boba Network is an appropriate example of a relatively small protocol in a heterogeneous system. According to L2Beat, its current market share is approximately 0.59%. Plus, Boba Network is a good proxy for Tokamak Network. Both services utilize the optimistic roll-up technology. The size of networks, in terms of TVL, is quite similar, too.
 <br/>
 
-While doing numeric modeling, we will refer to Boba Network for two reasons.
-
-First, Boba Network is an appropriate example of a relatively small protocol in a heterogeneous system. According to L2Beat, its current market share is approximately 0.59%.
-
-Second, Boba Network is a good proxy for Tokamak Network. Both services utilize the optimistic roll-up technology. The size of networks, in terms of TVL, is quite similar, too.
+Regarding estimated MEV sequencer extracts, since the test is based on numerical data, we will consider only the quantifiable types of MEV.
 <br/>
 <br/>
 
