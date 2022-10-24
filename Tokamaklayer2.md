@@ -192,9 +192,9 @@ Tokamak Network expects a variety of layer 2 services to coexist, meeting divers
 <br/>
 <br/>
 
-Consequently, layer 2 networks can exert monopoly power over users in a restrictive manner. Monopoly power exists because it will be hard to find the same functions targetting the specific necessity in many platforms. 
+Consequently, layer 2 networks can exert monopoly power over users. Monopoly power exists because it will be hard to find the same functions targetting the specific necessity in many platforms. 
 
-However, sequencers should not abuse monopoly power due to the competition based on scalability, the property all the layer 2 networks share. Suppose one protocol wields monopoly power to the point where its harms outweigh the benefits of customized functions. In that case,  users will abandon the protocol and flock to competitors with comparable performances in scalability.
+However, sequencers should not abuse monopoly power due to the competition based on scalability, the property all the layer 2 networks share. Suppose one protocol wields monopoly power to the point where its harms outweigh the benefits of customized functions. In that case, users will abandon the protocol and flock to competitors with comparable performances in scalability.
 <br/>
 <br/>
 
@@ -203,7 +203,7 @@ However, sequencers should not abuse monopoly power due to the competition based
 
 The limited monopoly power affects the aggressiveness of sequencers in pursuing MEV chances.
 
-Based on the figure above, at first, MEV is zero because there are no users. As the popularity of the layer 2 protocols grows, more people come to networks, which leads to more MEV opportunities. Interestingly, MEV increases very fast until it reaches roll-up fees. It is because sequencers can actively pursue MEV transactions with monopoly power.
+Based on the figure above, at first, MEV is zero because there are no users. As the popularity of the layer 2 protocols grows, more people come to networks, which leads to more MEV opportunities. Interestingly, MEV increases very fast until it reaches roll-up fees. It is because sequencers can actively execute MEV transactions with monopoly power.
 
 However, once MEV exceeds roll-up fees, the deceleration begins. Sequencers start to worry about whether MEV activity seriously erodes the common good. Crossing the ‘red line’ would mean users’ departure from protocols. The competition based on partial homogeneity works this time.
 <br/>
