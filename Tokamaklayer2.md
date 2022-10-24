@@ -344,7 +344,7 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
 
    Depositing TON implies putting TON into layer 2 networks to make transactions. 
 
-   Deposited TON is open to various possibilities. For instance, users can hold deposited TON like cash for future transactions. They can also lock or stake TON for a specific purpose. Notably, locked or staked TON loses the liquidity to perform the predetermined function.
+   Deposited TON is open to various possibilities. For instance, users can hold deposited TON like cash for future transactions. They can also lock or stake TON for a specific purpose. Locked or staked TON loses the liquidity to perform the predetermined function. For example, TON locked for layer 2 security is only for maintaining the integrity of networks.
 <br/>
 
 #### 3.2.2. TON seigniorage distribution based on the amount of TON deposited
