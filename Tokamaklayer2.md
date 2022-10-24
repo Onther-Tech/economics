@@ -251,7 +251,7 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
 
  1. average amount of gas required per transaction & state batch: 358,248
  2. gas price: 10~30 gwei (reflecting the recent downward trend in gas prices)
- 3. **daily roll-up fees:** 358,248*(10~30 gwei)*24 = 86 ~258 million gwei = **0.086 ~ 0.258 ETH**
+ 3. **daily roll-up fees:** 358,248*(10~30 gwei)*24 = 86 ~ 258 million gwei = **0.086 ~ 0.258 ETH**
 <br/>
 
 - **Estimated MEV a sequencer extracts**
