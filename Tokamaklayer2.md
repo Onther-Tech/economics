@@ -92,11 +92,11 @@ Tokamak Network wants TON to be a fee token. Plus, we directly deal with the fee
 ### 3.1. MEV(Maximal Extractable Value)
 <br/>
 
-The broader sense of MEV will remain intact in the long run. Instead of swapping TON from transaction fees for ETH, sequencers can utilize MEV profits to pay layer 1 fees.
+MEV will remain intact in the long run. Instead of swapping TON from transaction fees for ETH, sequencers can utilize MEV profits to pay layer 1 fees.
 <br/>
 <br/>
 
-#### 3.1.1. Broader definition of MEV
+#### 3.1.1. More inclusive definition of MEV
 <br/>
 
 - **Conventional definition of MEV**
@@ -112,9 +112,9 @@ The broader sense of MEV will remain intact in the long run. Instead of swapping
 - **Redefinition of MEV**
   <br/>
   
-    The definition of MEV above is primarily about taking profitable opportunities from a sea of transactions. However, we can also think about institutions to generate more value. More specifically, creating additional MEV chances is possible by designing policies that align the specific willingness to pay with corresponding needs.
+    The definition of MEV above is primarily about taking profitable opportunities from a sea of transactions. However, we can also think about institutions to generate more value. More specifically, creating additional MEV is possible by designing policies that align the specific willingness to pay with corresponding needs.
 
-    For example, if a sequencer gets compensated for putting transactions by a specific group of users first in a block, it can add to MEV, too. Users may also pay for inserting transactions at a particular time in a block.
+    For example, if a sequencer gets compensated for putting transactions by a specific group of users first in a block, it can add to MEV, too. Users may also pay for inserting transactions at a particular time in a block. In other words, while users with a higher willingness to pay expend extra money for preferential treatment in processing transactions, users with a lower willingness to pay are content with basic services.
 
     Therefore, in this article, MEV refers to the maximum value, more than standard rewards, created by selling the rights to change the sequence of transactions in a block. It can be in the form of either fee competition or transaction policies. FYI, if block producers pursue MEV opportunities for themselves, it is the same as buying the rights for free.  
    <br/>
