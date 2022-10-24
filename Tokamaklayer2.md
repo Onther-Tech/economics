@@ -258,48 +258,14 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
     <br/>
     <br/>
     
-    According to Flashbots, as of October 5th, KST, the extracted MEV during the last 30 days is about 795K USD. Therefore, we can infer that MEV worth approximately 27K USD gets materialized daily.
-    
-    However, it is more like the lower bound for the actual MEV due to the omission of certain types of transactions, including CEX-DEX arbitrages and sandwich transactions. Moreover, it is the extracted MEV on Ethereum, not layer 2 networks.
-    
-    Therefore, adapting the original data for our modeling is crucial.
-    </br>
-    </br>
-    
-    ![MEVbytype](https://github.com/Onther-Tech/economics/blob/main/mev_by_type.png)
+    ![MEVeigenphi](https://github.com/Onther-Tech/economics/blob/main/mev_eigenphi.png)
     <br/>
     <br/>
     
-    ![MEVCEX](https://github.com/Onther-Tech/economics/blob/main/dex_to_cex.png)
+    The numbers above show the size of MEV estimated by EigenPhi. Of course, it is for 30 days, so we have to modify it in daily terms:
     <br/>
     
-    First, the extracted MEV in the Flashbots Dashboard mostly comes from arbitrages. Considering liquidations are generally not more profitable than arbitrages, it is safe to assume all the extracted MEV comes from arbitrages.
-
-    Plus, arbitrages in the Flashbots data are through swap transactions in DEX. Since swap transactions are equivalent to spot transactions, we can complement the extracted MEV by reflecting the spot transactions in CEX:
-
-    **27K USD + 27K USD / 0.1134 = 265K USD**
-    <br/>
-    <br/>
-    
-    ![sandwich](https://github.com/Onther-Tech/economics/blob/main/sandwich_uniswap.png)
-    <br/>
-    <br/>
-    
-    ![uniswapTVL](https://github.com/Onther-Tech/economics/blob/main/uniswap_tvl.png)
-    <br/>
-    <br/>
-    
-    ![ethTVL](https://github.com/Onther-Tech/economics/blob/main/ethereum_tvl.png)
-    <br/>
-    <br/>
-    
-    Sandwich transactions cannot be ignored, too. Given the TVL difference, the cumulative sandwich profits in Ethereum are estimated as follows:
-
-    **310,000 USD * 31.9 / 5.03 = 1.97M USD**
-
-   Of course, since the number is in annualized terms, we can further update the extracted MEV as follows:
-
-    **265K USD + 1.97M USD / 365 days = 270.4K USD**
+    **(5.3M USD + 1.47M USD + 0.11M USD) / 30 = 230K USD**
     <br/>
     <br/>
     
@@ -307,9 +273,10 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
     <br/>
     <br/>
     
-    Unfortunately, MEV is not only for block producers or sequencers. Searchers can also capture MEV. If we only consider the share for miners or sequencers:
+    Unfortunately, MEV is not only for block producers or sequencers. Searchers can also capture MEV. If we only consider the share for sequencers:
+    <br/>
 
-    **270.4K USD * 0.357 = 97K USD**
+    **230K USD * 0.357 = 82K USD**
     <br/>
     <br/>
     
@@ -323,7 +290,7 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
     
     Finally, we have to interpret this layer 1 number in the context of layer 2. Assuming MEV is generally proportional to the size of financial activities within networks, the following calculation holds:
 
-    **97K USD * (4.71/31.9) = 14K USD**
+    **82K USD * (4.71/31.9) = 12K USD**
     <br/>
     <br/>
     
@@ -335,17 +302,17 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
     <br/>
     <br/>
     
-    Boba Network now expends daily roll-up fees worth 0.086 ~ 0.258 ETH or 115 ~ 346 USD.
+    Boba Network now expends daily roll-up fees worth 0.086 ~ 0.258 ETH or 115 ~ 345 USD.
     
-    The current market share of Boba Network is 0.59%. The estimated MEV a sequencer earns in Boba Network every day is 0.59% * 14K USD = 82.6 USD.
+    The current market share of Boba Network is 0.59%. The estimated MEV a sequencer earns in Boba Network every day is 0.59% * 12K USD = 71 USD.
     
-    Therefore, Boba Network is expected to cover 24%~72% of layer 1 fees with MEV.
+    Therefore, Boba Network is expected to cover 21%~62% of layer 1 fees with MEV.
     <br/>
     <br/>
     
     The result is consistent with our argument, given that Boba Network is an emergent platform with a growing user base. For example, according to ETHTPS.info, its TPS is 0.03, still not matching Ethereum.
     
-    We also note that potential off-chain MEV, as defined earlier, is not included in the data due to difficulties in obtaining credible data. Once off-chain MEV gets attention, it will be much easier to cover layer 1 costs with MEV profits.
+    We also note that potential MEV opportunities created by transaction policies, as defined earlier, are not included in the data due to difficulties in obtaining credible data. Once they get attention, it will be much easier to cover layer 1 costs with MEV profits.
    <br/>
    <br/>
       
