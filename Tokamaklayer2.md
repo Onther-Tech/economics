@@ -486,7 +486,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
 <br/>
 <br/>
 
-![structure](https://github.com/Onther-Tech/economics/blob/main/summary.png)
+![structure](https://github.com/Onther-Tech/economics/blob/main/redefined_mev.png)
 <br/>
 <br/>
 
@@ -505,14 +505,14 @@ In conclusion, implications of our model are as follows:
   <br/>
   <br/>
   
-- **Centralized but censorship-resistant block production**
+- **Centralized but censorship-resistant layer 2 block production**
   <br/>
   
   ![censorresistant](https://github.com/Onther-Tech/economics/blob/main/censorship_resistant.png)
   <br/>
   <br/>
   
-  One of the most serious shortcomings of centralized block production is that transactions can be censored arbitrarily. However, in the future anticipated by Tokamak Network, such malicious behaviors can be restricted due to the competition among layer 2 protocols. The competition arises out of the homogeneity they share. If a specific layer 2 platform tries to manipulate the block creation at the expense of users’ benefits, they will abandon the network and migrate to other competitors.
+  One of the most serious shortcomings of centralized block production is that transactions can be censored. However, in the future anticipated by Tokamak Network, such malicious behaviors can be restricted due to the competition among layer 2 protocols. The competition arises out of the homogeneity they share. If a specific layer 2 platform tries to manipulate the block creation at the expense of users’ benefits, they will abandon the network and migrate to other competitors.
   <br/>
   <br/>
   
@@ -526,8 +526,11 @@ In conclusion, implications of our model are as follows:
   Our approach is more like the one taken by Optimism. While admitting the presence of MEV, Tokamak Network plans to alleviate the negative externalities of MEV by making it contribute to the fee token utility of TON.
   
   If MEV exceeds roll-up fees, the surplus can go to devoted users and developers, further diluting the side effects of MEV.
+  
+  It is also notable that we introduced a new type of MEV: value created by transaction policies. It is relatively resilient to the harms of MEV because every user can pay and earn benefits exactly as they want based on their willingness to pay.
 <br/>
 <br/>
+  
 
 ## References
 <br/>
