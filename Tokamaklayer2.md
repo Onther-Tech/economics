@@ -294,7 +294,7 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
     <br/>
     <br/>
     
-- **Conclusion**
+- **Comparison**
     <br/>
     <br/>
     
@@ -357,7 +357,7 @@ Regarding estimated MEV sequencer extracts, since the test is based on numerical
 
 As discussed in the previous sections, MEV mitigates the fee token dilemma by allowing extra income for sequencers to handle layer 1 costs. Of course, more MEV chances will arise only if more users join networks.
 
-TON seigniorage based on the amount of TON deposited can facilitate such a process. Sequencers will strive to lure users because more users deposit more TON, leading to a higher portion of TON seigniorage for sequencers.
+TON seigniorage based on the amount of TON deposited can facilitate such a process. Sequencers will strive to lure users because more users deposit more TON. Of course, it implies proportionately larger TON seigniorage for sequencers.
 <br/>
 <br/>
 
@@ -369,11 +369,9 @@ TON seigniorage based on the amount of TON deposited can facilitate such a proce
 <br/>
 <br/>
 
-However, we have a problem. What if people sell deposited TON all at once within layer 2? It is technically possible because deposited TON is open to all transactions, including selling.
+However, we have a problem. What if sequencers sell TON from transaction fees and seigniorage rewards to deal with layer 1 fees? It is at the discretion of sequencers to decide whether to 1) use MEV profits or 2) swap TON for ETH to pay layer 1 fees. Of course, the former option contributes to tackling the fee token dilemma. Unfortunately, we cannot force sequencers to choose a specific method.
 
-The issue is also crucial to our scheme. When sequencers take transaction fees in TON, they must decide whether to 1) use MEV profits or 2) swap TON for ETH to pay layer 1 fees. Of course, the former option contributes to tackling the fee token dilemma.
-
-TON seigniorage distribution proportional to the amount of TON locked can guide sequencers as we want. TON from transaction fees will be locked for seigniorage. Of course, MEV revenue will cover layer 1 costs. If sequencers still stick to swapping TON for ETH, sacrificing the potential seigniorage revenue is inevitable.
+TON seigniorage distribution proportional to the amount of TON locked can guide sequencers as we want. TON from transaction fees will be locked for seigniorage. Of course, MEV profits will cover layer 1 costs. If sequencers still stick to swapping TON for ETH, sacrificing the potential seigniorage revenue is inevitable.
 <br/>
 <br/>
 
@@ -428,11 +426,11 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   <br/>
   <br/>
   
-  While competing with other dominant incumbents, it will be hard to attract users as nascent followers. Thus, we can introduce zero transaction fees in the early phase of the protocol. One step further, each transaction may be rewarded with a certain amount of TON.
-    <br/>
-    <br/>
-
-  As you can see, sequencers are likely to invest their money in the early stage of protocols. Therefore, the incentive mechanism is necessary to ensure that sequencers get credit for their performances. Here comes the TON seigniorage distribution proportional to the amount of TON deposited. As sequencers convince users of their merits, more TON will be deposited to make transactions, leading to more TON seigniorage for sequencers.
+  While competing with other dominant incumbents, it will be hard to attract users as nascent followers. Thus, we can introduce zero transaction fees in the early phase of the protocol. One step further, each transaction may be rewarded with a certain amount of TON. In other words, sequencers are likely to invest their money in the early stage of protocols.
+  <br/>
+  <br/>
+  
+  Therefore, the incentive mechanism is necessary to ensure that sequencers get credit for their performances. Here comes the TON seigniorage distribution proportional to the amount of TON deposited. As sequencers convince users of their merits, more TON will be deposited to make transactions, leading to more TON seigniorage for sequencers.
 
   The TON seigniorage distribution proportional to the amount of TON locked can also work in that way. If sequencers lock a large amount of TON for seigniorage, they have big stakes to lose for their malicious behaviors. Users will interpret it as a sincere commitment to layer 2 security.
   <br/>
@@ -440,7 +438,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   
 - **MEV**
     
-  Now that TON incentives laid the ground for MEV by bringing more people into platforms, we should delve into concrete ways to extract MEV.
+  If TON incentives manage to bring more people into platforms, we should delve into concrete ways to extract MEV.
   <br/>
   <br/>
   
@@ -452,7 +450,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
     <br/>
     <br/>
 
-  Establishing exchanges is also on the table. Potential arbitrage opportunities will add to MEV. Additionally, sequencers can also expect commissions from trading activities.
+  Establishing exchanges is also on the table. Potential arbitrage opportunities will add to MEV.
 <br/>
 
 #### 3.3.2. Mature protocols
@@ -465,7 +463,7 @@ It is finally time to incorporate all the ideas discussed into the concrete mode
   <br/>
   <br/>
   
-  TON seigniorage performs similarly in mature protocols: encourage sequencers to maintain loyal users and capture new users.
+  Even with non-zero transaction fees, TON seigniorage performs similarly in mature protocols: encourage sequencers to maintain loyal users and capture new users.
   <br/>
   <br/>
   However, we must not miss one additional function: discourage sequencers from swapping TON for ETH. There is no way to force sequencers to use MEV to cover layer 1 fees. Despite making an adequate amount of MEV, they can still swap TON from transaction fees for ETH to pay layer 1 fees. TON seigniorage distribution based on the amount of TON locked raises the opportunity costs of such actions. If sequencers decide to sell TON from transaction fees, they give up potential benefits from TON seigniorage.
